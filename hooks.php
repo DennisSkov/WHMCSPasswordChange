@@ -3,7 +3,7 @@
 add_hook('AdminAreaFooterOutput', 1, function() {
     $html = <<<HTML
 </li><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <li><a href="#" data-toggle="modal" data-target="#modalPasswordChange"><i class="fa-solid fa-key"></i> Reset Password</>
+   <li><a href="#" data-toggle="modal" data-target="#modalPasswordChange"><i class="fa-solid fa-key"></i> Change Password</>
     </a></li>
 </li>
 HTML;
