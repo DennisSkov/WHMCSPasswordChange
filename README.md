@@ -8,6 +8,10 @@ A lot of people complained about the removal of the "Change Password" feature by
 Password change is only possible for the account owner. You are not able to reset passwords for users associated with
 an account at the moment.
 
+## Requirements
+* WHMCS 8.x (only tested on 8.7)
+  * Could possibly work with older versions of WHMCS
+
 ## Installation
 1. Download the repository to your WHMCS installation 
 ```shell
