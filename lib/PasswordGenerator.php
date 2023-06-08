@@ -11,6 +11,9 @@ class PasswordGenerator
     protected $userModel;
 
     public function __construct($userId){
+        if(!isset($_SESSION['adminid'])){
+            throw new \Exception('Not authenticated as admin');
+        }
         $this->userId = $userId;
         $this->userModel = User::findOrFail($userId);
     }
