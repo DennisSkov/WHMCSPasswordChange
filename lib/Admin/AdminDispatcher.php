@@ -20,6 +20,5 @@ class AdminDispatcher
 
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit();
-        return '<p>Invalid action requested. Please go back and try again.</p>';
     }
 }
