@@ -5,7 +5,8 @@ use WHMCS\Module\Addon\PasswordChange\PasswordGenerator;
 use WHMCS\Database\Capsule;
 class Controller
 {
-    public function changePassword(){
+    public function changePassword(): void
+    {
         if($_SERVER["REQUEST_METHOD"] !== 'POST'){
             die('Method not allowed');
         }
@@ -43,7 +44,5 @@ class Controller
             exit(json_encode(array('result' => 'success')));
 
         }
-        header('Location: clientssummary.php?userid='.$userId);
-        exit();
     }
 }
