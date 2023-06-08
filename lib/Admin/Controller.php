@@ -31,7 +31,7 @@ class Controller
         }else {
             $changePassword = new PasswordGenerator($userId);
             $changePassword->setPassword($password1);
-            if($sendToClient){
+            if($sendToClient === 'true'){
 
                 $postData = [
                     'messagename' => 'Password Change for User',
@@ -39,7 +39,7 @@ class Controller
                     'customvars' => base64_encode(serialize(['password' => $password1]))
                 ];
                 localAPI('SendEmail', $postData);
-                exit(json_encode(array('result' => 'success', 'message' => $sendToClient)));
+                exit(json_encode(array('result' => 'success', 'message' => 'sentToClient')));
             }
             exit(json_encode(array('result' => 'success')));
 
