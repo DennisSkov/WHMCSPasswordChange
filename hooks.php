@@ -35,7 +35,7 @@ add_hook('AdminAreaFooterOutput', 1, function($vars){
                       <div class="form-group">
                         <label for="password">New Password</label>
                         <input type="password" class="form-control" id="password" aria-describedby="passwordHelp" required>
-                        <input type="hidden" id="userid" value="{$clientId}">
+                        <input type="hidden" id="userid" value="$clientId">
                       </div>
                       <div class="form-group">
                         <label for="confirmPassword">Confirm Password</label>
@@ -82,7 +82,7 @@ $(document).ready(function () {
         
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
-                var response = JSON.parse(xhr.responseText)
+                const response = JSON.parse(xhr.responseText);
                 toastr.options = {
                       "closeButton": true,
                       "progressBar": true,
@@ -118,10 +118,10 @@ $(document).ready(function () {
                 }
           }};
         
-        var password1 = document.getElementById("password").value;
-        var password2 = document.getElementById("confirmPassword").value;
-        var sendToClient = document.getElementById('sendToClient').checked;
-        var userId = document.getElementById('userid').value;
+        let password1 = document.getElementById("password").value;
+        let password2 = document.getElementById("confirmPassword").value;
+        let sendToClient = document.getElementById('sendToClient').checked;
+        let userId = document.getElementById('userid').value;
 
         xhr.send("userid="+userId+"&password="+password1+"&confirmPassword="+password2+"&sendToClient="+sendToClient);
     }
