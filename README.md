@@ -11,6 +11,7 @@ an account at the moment.
 ## Requirements
 * WHMCS 8.x (only tested on 8.7)
   * Could possibly work with older versions of WHMCS
+* PHP 8
 
 ## Installation
 1. Download the repository to your WHMCS installation 
