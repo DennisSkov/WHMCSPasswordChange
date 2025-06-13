@@ -1,3 +1,6 @@
+# Project archived
+WHMCS 8.13 includes a built-in password change feature, so this module is no longer needed.
+
 # Password Change for WHMCS
 This module allows you to change the passwords of users in WHMCS. 
 It also allows you to send the password to the client via email.
@@ -11,7 +14,7 @@ an account at the moment.
 ## Requirements
 * WHMCS 8.x (only tested on 8.7)
   * Could possibly work with older versions of WHMCS
-* PHP 8
+* PHP 7.1 or newer
 
 ## Installation
 1. Download the repository to your WHMCS installation 
